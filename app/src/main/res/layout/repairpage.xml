@@ -1,0 +1,145 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- First LinearLayout with Back Button and Title -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="81dp"
+            android:layout_height="58dp"
+            android:background="@null"
+            android:contentDescription="Back Button"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="86dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="My Booking"
+            android:textAlignment="center"
+            android:textColor="@color/maroon"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <!-- Second LinearLayout with Content -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="800dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/university_logo"
+            android:layout_width="172dp"
+            android:layout_height="164dp"
+            android:layout_gravity="center"
+            android:contentDescription="University Logo"
+            android:paddingBottom="10dp"
+            android:src="@drawable/circlelogo" />
+
+        <TextView
+            android:id="@+id/popup_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Process and Procedures for Job Requests"
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Detailed Description -->
+        <TextView
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1. For minor repair and with available materials, the maintenance personnel will perform the repair immediately."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="298dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="2. Work-related requests will be accommodated from 1 PM to 3 PM only, except for emergency/urgent matters."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3. For requests that need materials that are not available and need to be purchased first can only be served once the materials are delivered/available."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process and Procedures for Job Requests"
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Job requests can be filed through any of the following: Online Job Request Form, Email, and Telephone."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="2. Requestor must fill out/provide all the necessary data when requesting:
+\n • Provide basic information on the requestor (name, department) \n •Select the appropriate type of request (Housekeeping, Repair/Maintenance, Work Related)
+\n Describe briefly the request so that GSD can prepare the necessary manpower, tools, equipment, or replacement materials needed."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. GSD will assign personnel who will respond to the request based on the category of the request; the request will be scheduled based on the following:
+\n • Emergency/Same Day Response (URGENT) - work must start after a request has been received.
+\n • Preventive Repair/Maintenance (HIGH) - work that is planned or scheduled maintenance for the upkeep of the school.
+\n • Routine (Normal) - work which is non-critical that can be done within a 1 to 2-week period."
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/reserveButton"
+            android:layout_width="276dp"
+            android:layout_height="59dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/maroon"
+            android:fontFamily="@font/raleway_regular"
+            android:text="Reserve"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout for date, event name, resources, and booked by -->
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="413dp"
+        android:layout_height="141dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Date and Time -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:text="October 20, 2024 | 10:00 AM - 12:00 PM"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Event Name -->
+        <TextView
+            android:id="@+id/eventNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Success Ladder aasdasdasdsdas asd"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <!-- Resources -->
+        <TextView
+            android:id="@+id/resourcesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="PH | Alumni Hall | Event Space"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Booked By -->
+        <TextView
+            android:id="@+id/bookedByTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lady Bridget Erica L. Alegre"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Details Button -->
+        <Button
+            android:id="@+id/detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="-33dp"
+            android:text="Details"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Request Status Label -->
+    <TextView
+        android:id="@+id/statusLabelTextView"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="-20dp"
+        android:gravity="right"
+        android:paddingRight="15dp"
+        android:text="Request Status:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statusTextView" />
+
+    <!-- Status TextView - independent from LinearLayout -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="160dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="right"
+        android:paddingRight="27dp"
+        android:text="Approved"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

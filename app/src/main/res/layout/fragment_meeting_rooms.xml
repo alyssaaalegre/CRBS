@@ -1,0 +1,100 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingEnd="2dp">
+
+            <ImageView
+                android:id="@+id/PH_AlumniHall"
+                android:layout_width="300dp"
+                android:layout_height="366dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shash_avr1" />
+
+            <TextView
+                android:text="SHASH | AVR1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="3rd Floor \nCapacity 100"
+                android:textColor="@color/dark_gray"
+                android:textSize="13sp"
+                android:gravity="start"
+                android:layout_gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="366dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/shash_avr2"
+                android:layout_gravity="start"
+                android:background="@drawable/rounded_corners"
+                android:clipToOutline="true"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="SHASH | AVR2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_marginStart="14dp"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="2nd Floor \nCapacity 100"
+                android:textColor="@color/dark_gray"
+                android:textSize="13sp"
+                android:gravity="start"
+                android:layout_gravity="start" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

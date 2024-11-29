@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@color/white"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- Top Image (Campus Image) -->
+
+    <!-- Text for Main Campus -->
+
+    <!-- Arrow Icon -->
+
+    <ImageView
+        android:id="@+id/mainCampusImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_campus_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/mainCampusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Main Campus"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/mainCampusImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mainCampusImage"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <ImageButton
+        android:id="@+id/arrowIcon"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="@id/mainCampusText"
+        app:layout_constraintBottom_toBottomOf="@id/mainCampusText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="#800000"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#888888"
+        app:tabMode="scrollable"
+        app:layout_constraintTop_toBottomOf="@id/mainCampusImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Define your tabs here -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_event_spaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Spaces" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_teaching_spaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teaching Spaces" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_meeting_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meeting Rooms" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_laboratories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laboratories" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- ViewPager2 for the content below the TabLayout -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:background="@drawable/navbarbackground"
+        android:elevation="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home" />
+
+        <!-- Calendar Button -->
+        <ImageButton
+            android:id="@+id/calendarButton"
+            android:layout_weight="1"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_calendar"
+            android:contentDescription="Calendar" />
+
+        <!-- Center Icon Button -->
+        <ImageButton
+            android:id="@+id/MyBookingsButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_bookmark"
+            android:contentDescription="Center" />
+
+        <!-- Settings Button -->
+        <ImageButton
+            android:id="@+id/UtilityButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_utility"
+            android:contentDescription="Settings" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

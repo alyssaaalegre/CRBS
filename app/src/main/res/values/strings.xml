@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">SWU CRBS</string>
+    <string-array name="capacity_options">
+        <item>Up to 10 Participants</item>
+        <item>Up to 20 Participants</item>
+        <item>Up to 30 Participants</item>
+        <item>Up to 50 Participants</item>
+        <item>Up to 80 Participants</item>
+        <item>Up to 100 Participants</item>
+        <item>More than 100 Participants</item>
+    </string-array>
+
+    <string-array name="resourcetype_options">
+        <item>All</item>
+        <item>Event Spaces</item>
+        <item>Teaching Spaces</item>
+        <item>Meeting Rooms</item>
+        <item>Laboratories</item>
+    </string-array>
+
+    <string-array name="request_type_array">
+        <item>Housekeeping</item>
+        <item>Repair/Maintenance Work</item>
+        <item>Work Related Assistance</item>
+    </string-array>
+
+
+    <string-array name="departments_options">
+        <item>B-School</item>
+        <item>Dentistry</item>
+        <item>Information Technology</item>
+        <item>Medicine</item>
+        <item>Medical Technology</item>
+        <item>Nursing</item>
+        <item>Optometry</item>
+        <item>Pharmacy</item>
+        <item>Pre-Medicine</item>
+        <item>Radiologic Technology</item>
+        <item>Rehabilitative Sciences</item>
+        <item>SD+C</item>
+        <item>SHS</item>
+        <item>Veterinary Medicine</item>
+    </string-array>
+</resources>
+
