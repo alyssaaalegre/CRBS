@@ -1,23 +1,17 @@
-# Gradle files
 /.gradle/
 /build/
 
-# Android Studio specific
 .idea/
 .classpath
 .project
 .settings/
 *.iml
 
-# Keystore files
 *.jks
 
-# Log files
 *.log
 
-# Exclude generated assets
 /app/build/
 
-# Local environment
 local.properties
 .env
